@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GlassStocks</string>
+    <string name="check_stocks">Check Stocks</string>
+    <string name="stop">Stop</string>
+    <string name="refresh">Refresh</string>
+    <string name="edit">Edit</string>
+    <string name="star_symbol">Star/Unstar</string>
+    <string name="view_all">View All</string>
+    <string name="add_symbol">Add symbol</string>
+    <string name="delete_symbol">Delete symbol</string>
+    <string name="no_matches">No matches found</string>
+    <string name="portfolio_empty">Edit portfolio to add Starred stocks</string>
+    <string name="too_many_stars">You can only have 5 starred stocks</string>
+    <string name="title_activity_portfolio_edit">Edit Portfolio</string>
+    <string name="title_activity_symbol_lookup">Lookup Symbol</string>
+    <string name="title_activity_view_all">View All</string>
+
+</resources>

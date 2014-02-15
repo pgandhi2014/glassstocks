@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intel.pg.glassstocks" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_stocks"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.intel.pg.glassstocks.MenuActivity"
+            android:enabled="true"
+            android:label="@string/app_name"
+            android:theme="@style/MenuTheme" >
+        </activity>
+
+        <service
+            android:name="com.intel.pg.glassstocks.StocksService"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_stocks"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger_start" />
+        </service>
+
+        <activity
+            android:name="com.intel.pg.glassstocks.PortfolioEditActivity"
+            android:label="@string/title_activity_portfolio_edit" >
+        </activity>
+        <activity
+            android:name="com.intel.pg.glassstocks.SymbolLookupActivity"
+            android:label="@string/title_activity_symbol_lookup" >
+        </activity>
+        <activity
+            android:name="com.intel.pg.glassstocks.ViewAllActivity"
+            android:label="@string/title_activity_view_all" >
+        </activity>
+    </application>
+
+</manifest>

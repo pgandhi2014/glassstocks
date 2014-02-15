@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/refresh"
+        android:title="@string/refresh"
+        android:icon="@drawable/ic_sync_50" />
+    <item
+        android:id="@+id/viewall"
+        android:title="@string/view_all"
+        android:icon="@drawable/ic_document_50" />
+    <item
+        android:id="@+id/edit"
+        android:title="@string/edit"
+        android:icon="@drawable/ic_pen_50" />
+    <item
+    android:id="@+id/stop"
+    android:title="@string/stop"
+    android:icon="@drawable/ic_no_50" />
+
+</menu>
